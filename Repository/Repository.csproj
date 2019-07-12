@@ -49,5 +49,11 @@
   <ItemGroup>
     <Content Include="Estrutura.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{90db917f-a2d1-4939-b58e-399470e6e2e5}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

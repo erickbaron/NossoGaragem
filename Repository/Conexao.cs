@@ -9,7 +9,16 @@ namespace Repository
 {
     public class Conexao
     {
-        SqlConnection connection = new SqlConnection();
+        public static SqlCommand Conectar()
+        {
+            SqlConnection connection = new SqlConnection();
+            connection.ConnectionString = @"";
+            connection.Open();
+
+            SqlCommand command = new SqlCommand();
+            command.Connection = connection;
+            return command;
+        }
         
     }
 }
